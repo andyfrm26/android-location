@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp">
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/purple_700"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Welcome to LocationApp!"/>
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saat ini, Anda sedang berada di..."
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tv_negara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negara: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginVertical="10dp"/>
+        <TextView
+            android:id="@+id/tv_provinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provinsi: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginVertical="10dp"/>
+        <TextView
+            android:id="@+id/tv_kota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kota: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginVertical="10dp"/>
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginVertical="10dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_get_location"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Get current location"
+        app:layout_constraintTop_toBottomOf="@id/ll_location"
+        android:layout_marginTop="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
